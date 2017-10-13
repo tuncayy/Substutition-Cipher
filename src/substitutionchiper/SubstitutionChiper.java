@@ -28,9 +28,9 @@ public class SubstitutionChiper {
                         String alpyedek = alp;
                         String alp2 = "";
                         String criptedtext = "";
-                        alp2 += key; // anahtar kelimeyi harflerin soluna koyuyor.
+                        alp2 += key; // Put keyword to left side of alpabeth 
                         
-                        for (int i = 0; i < alp.length(); i++) {  //key in içindeki harfleri tüm harflerden çıkartıyor
+                        for (int i = 0; i < alp.length(); i++) {  //and order remian letters back of the keyword
                             for (int j = 0; j < key.length(); j++) {
                                 if(alp.charAt(i) == key.charAt(j))
                                 {
@@ -38,7 +38,7 @@ public class SubstitutionChiper {
                                 }
                             }
                         }
-                        alp2 += alp; // kalan harfleri anahtar kelimenin arkasına diziyor
+                        alp2 += alp; 
                         
                         for(int x = 0; x < plaintext.length(); x++){
         char c = (char)(plaintext.charAt(x));
